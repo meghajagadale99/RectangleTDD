@@ -23,15 +23,15 @@ class RectangleTest {
 
     @Test
     void shouldReturnAreaOfSquareWhenSquareHasGivenSide() {
-        Square square = new Square(5);
-        int result = square.area();
+        Rectangle rectangle = Rectangle.createSquare(5);
+        int result = rectangle.area();
         assertEquals(25, result);
     }
 
     @Test
     void shouldReturnPerimeterOfSquareWhenSquareHasGivenSide() {
-        Square square = new Square(5);
-        int result = square.perimeter();
+        Rectangle rectangle = Rectangle.createSquare(5);
+        int result = rectangle.perimeter();
         assertEquals(20, result);
     }
 

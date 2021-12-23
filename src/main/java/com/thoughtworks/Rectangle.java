@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 public
-class Rectangle implements IShapes {
+class Rectangle {
     private final int length;
     private final int breadth;
 
@@ -11,6 +11,12 @@ class Rectangle implements IShapes {
         this.length = length;
         this.breadth = breadth;
     }
+
+    public static
+    Rectangle createSquare(int side) {
+        return new Rectangle(side, side);
+    }
+
     public
     int area() {
         return length * breadth;
