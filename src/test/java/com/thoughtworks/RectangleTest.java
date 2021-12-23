@@ -12,4 +12,11 @@ class RectangleTest {
         int result = rectangle.area();
         assertEquals(20, result);
     }
+
+    @Test
+    void shouldReturnPerimeterWhenRectangleHasGivenLengthAndBreadth() {
+        Rectangle rectangle = new Rectangle(5, 4);
+        int result = rectangle.perimeter();
+        assertEquals(18, result);
+    }
 }
