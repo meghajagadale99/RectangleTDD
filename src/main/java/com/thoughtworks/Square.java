@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 public
-class Square {
+class Square implements IShapes{
     private int side;
 
     public
@@ -12,5 +12,10 @@ class Square {
     public
     int area() {
         return side * side;
+    }
+
+    public
+    int perimeter() {
+        return 4 * side;
     }
 }

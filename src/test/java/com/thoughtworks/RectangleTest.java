@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public
 class RectangleTest {
+
     @Test
     void shouldReturnAreaWhenRectangleHasGivenLengthAndBreadth() {
         Rectangle rectangle = new Rectangle(5, 4);
@@ -25,6 +26,13 @@ class RectangleTest {
         Square square = new Square(5);
         int result = square.area();
         assertEquals(25, result);
+    }
+
+    @Test
+    void shouldReturnPerimeterOfSquareWhenSquareHasGivenSide() {
+        Square square = new Square(5);
+        int result = square.perimeter();
+        assertEquals(20, result);
     }
 
 }

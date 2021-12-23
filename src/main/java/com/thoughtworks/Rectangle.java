@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 public
-class Rectangle {
+class Rectangle implements IShapes {
     private final int length;
     private final int breadth;
 
