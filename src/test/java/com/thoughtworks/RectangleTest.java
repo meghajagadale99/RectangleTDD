@@ -19,4 +19,12 @@ class RectangleTest {
         int result = rectangle.perimeter();
         assertEquals(18, result);
     }
+
+    @Test
+    void shouldReturnAreaOfSquareWhenSquareHasGivenSide() {
+        Square square = new Square(5);
+        int result = square.area();
+        assertEquals(25, result);
+    }
+
 }
